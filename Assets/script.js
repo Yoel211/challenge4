@@ -13,7 +13,7 @@ startButton.addEventListener("click", function(){
     console.log("")
     var header = document.querySelector("header");
     header.classList.add("hidden")
-    //header.classList.remove("hidden")
+    // header.classList.remove("hidden")
     showQuestion()
 })
 
@@ -23,7 +23,21 @@ var showQuestion = function() {
      var questionText = document.createElement ("h4")
      questionText.textContent= questions[0].question
      questionEl.appendChild (questionText)
+
+     var questionEl =  document.getElementById ("question2")
+     // creates the question element
+     var questionText = document.createElement ("h4")
+     questionText.textContent= questions[1].question
+     questionEl.appendChild (questionText)
+     
+     
+     
+     
+     
      //creates the answers element
+
+     var answersText = document.createElement ("h6")
+     answersText.textContent = answers[0].answer
 
 
 
@@ -38,7 +52,7 @@ var showQuestion = function() {
 var questions = [
     { 
         question: "Commomly used data types DO NOT include:",
-    answers: {
+    answer: {
         1: 'strings',
         2: 'booleans',
         3: 'alerts',
